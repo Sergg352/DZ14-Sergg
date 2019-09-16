@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class dataName {
+    static let temperatures = dataName()
+    
+    private let kUserNameKey = "dataName.kUserNameKey"
+    
+    var dataJson: JsonData? {
+        set{UserDefaults.standard.set(newValue, forKey: kUserNameKey)}
+        get{
+           // return UserDefaults.standard(forKey: kUserNameKey)
+            return UserDefaults.standard.object(forKey: kUserNameKey) as? JsonData
+        }
+    }
+}

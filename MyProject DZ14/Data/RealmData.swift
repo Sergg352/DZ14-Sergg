@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+class temperatures: Object {
+    @objc dynamic var name: String = ""
+}

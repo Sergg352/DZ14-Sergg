@@ -1,0 +1,6 @@
+framework module Pods_MyProject_DZ14 {
+  umbrella header "Pods-MyProject DZ14-umbrella.h"
+
+  export *
+  module * { export * }
+}

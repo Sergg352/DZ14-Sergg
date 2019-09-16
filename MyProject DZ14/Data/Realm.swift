@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import RealmSwift
+
+class datatemp: Object {
+    @objc dynamic var name: String = ""
+}
